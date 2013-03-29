@@ -6,7 +6,7 @@ package unittesting.isolation;
  * Time: 18:19
  */
 public class Stub {
-    static int Add(int x, int y) {
+    static int add(int x, int y) {
         if (x == 3 && y == 2) {
             return 5;
         }
@@ -18,7 +18,7 @@ public class Stub {
         return 9999;
     }
 
-    static int Sub(int x, int y) {
+    static int sub(int x, int y) {
         if (x == 3 && y == 4) {
             return -1;
         }

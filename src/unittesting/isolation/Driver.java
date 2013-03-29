@@ -6,20 +6,40 @@ package unittesting.isolation;
  * Time: 18:28
  */
 public class Driver {
-    static void Ctr() {
+    static void ctr() {
         int result;
-        result = UnitBeingTested.Ctr(3, 2);
+        result = UnitBeingTested.ctr(3, 2);
         if (result == 5) {
-            System.out.println("Pass");
+            System.out.println("The ctr(int,int) unit pass.");
         } else {
-            System.out.println("Fail");
+            System.out.println("The ctr(int,int) unit fail.");
         }
 
-        result = UnitBeingTested.Ctr(3, 4);
+        result = UnitBeingTested.ctr(3, 4);
         if (result == -1) {
-            System.out.println("Pass");
+            System.out.println("The ctr(int,int) unit pass.");
         } else {
-            System.out.println("Fail");
+            System.out.println("The ctr(int,int) unit fail.");
+        }
+    }
+
+    static void add() {
+        int result;
+        result = UnitBeingTested.add(3, 2);
+        if (result == 5) {
+            System.out.println("The add(int,int) unit pass.");
+        } else {
+            System.out.println("The add(int,int) unit fail");
+        }
+    }
+
+    static void sub() {
+        int result;
+        result = UnitBeingTested.sub(3, 4);
+        if (result == -1) {
+            System.out.println("The sub(int,int) unit pass.");
+        } else {
+            System.out.println("The sub(int,int) unit fail");
         }
     }
 }

@@ -5,8 +5,10 @@ package unittesting.isolation;
  * Date: 13-3-29
  * Time: 18:32
  */
-public class DriveCtr {
+public class PerformUnitTesting {
     public static void main(String[] args) {
-        Driver.Ctr();
+        Driver.ctr();
+        Driver.add();
+        Driver.sub();
     }
 }

@@ -6,11 +6,19 @@ package unittesting.isolation;
  * Time: 18:22
  */
 public class UnitBeingTested {
-    static int Ctr(int x, int y) {
+    static int ctr(int x, int y) {
         if (x >= y) {
-            return Stub.Add(x, y);
+            return Stub.add(x, y);
         } else {
-            return Stub.Sub(x, y);
+            return Stub.sub(x, y);
         }
+    }
+
+    static int add(int x, int y) {
+        return x + y;
+    }
+
+    static int sub(int x, int y) {
+        return x - y;
     }
 }
