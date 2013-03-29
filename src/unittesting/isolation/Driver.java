@@ -6,37 +6,30 @@ package unittesting.isolation;
  * Time: 18:28
  */
 public class Driver {
-    static void ctr() {
+    static void ctr(int x, int y, int expect) {
         int result;
-        result = UnitBeingTested.ctr(3, 2);
-        if (result == 5) {
-            System.out.println("The ctr(int,int) unit pass.");
-        } else {
-            System.out.println("The ctr(int,int) unit fail.");
-        }
-
-        result = UnitBeingTested.ctr(3, 4);
-        if (result == -1) {
+        result = UnitBeingTested.ctr(x, y);
+        if (result == expect) {
             System.out.println("The ctr(int,int) unit pass.");
         } else {
             System.out.println("The ctr(int,int) unit fail.");
         }
     }
 
-    static void add() {
+    static void add(int x, int y, int expect) {
         int result;
-        result = UnitBeingTested.add(3, 2);
-        if (result == 5) {
+        result = UnitBeingTested.add(x, y);
+        if (result == expect) {
             System.out.println("The add(int,int) unit pass.");
         } else {
             System.out.println("The add(int,int) unit fail");
         }
     }
 
-    static void sub() {
+    static void sub(int x, int y, int expect) {
         int result;
-        result = UnitBeingTested.sub(3, 4);
-        if (result == -1) {
+        result = UnitBeingTested.sub(x, y);
+        if (result == expect) {
             System.out.println("The sub(int,int) unit pass.");
         } else {
             System.out.println("The sub(int,int) unit fail");
